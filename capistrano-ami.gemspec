@@ -26,6 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'webmock', '~> 2.0'
 
-  spec.add_dependency 'aws-sdk', '~> 2'
+  spec.add_dependency 'aws-sdk', '~> 3'
   spec.add_dependency 'capistrano', '~> 3'
 end
