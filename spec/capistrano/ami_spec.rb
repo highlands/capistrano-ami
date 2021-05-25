@@ -35,6 +35,8 @@ describe Capistrano::Ami do
     end
 
     it 'by shared credentials' do
+      allow(File).to receive(:read).with(File.join(Dir.home, '.aws', 'config')).and_return("")
+
       sharedcredentials = <<EOS
 [test_credentials]
 aws_access_key_id = ABCDEFGHIJ0123456789
